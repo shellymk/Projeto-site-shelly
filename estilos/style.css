@@ -4,37 +4,79 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 16px;
 
 }
+
 body
 {
     background-color: aqua;
-
+    display: flex;
 }
+
 main
 {
     background-color: white;
-    width: 500px;
-    margin: auto;
+    width: 100%;
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.014);
+    border-radius: 5px ;
     padding: 10px;
-    box-shadow: 3px 3px 5px black;   
+    
+    
+      
+}
+header
+{
+    background-color: rgb(238, 245, 245);
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.014);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px ;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+article#js, #html
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+p
+{
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
 }
 
 h1 
 {
 
-    font-size: 1.5em;
+    
+    font-size: clamp(1.5em, 2vw, 2.4em);
     color: (58, 0, 112);
 }
 
 h2
 {
-    font-size: 1.5em;
+    font-size: clamp(1.2em, 2vw, 2.4em);
     color: (58, 0, 112);
+    margin-left: 20px;
 }
 
 img.lado 
 {
     float: right;
     padding: 5px;
+
+    display: block;
+  width: clamp(100px, 20vw, 150px);
+  height: auto;
+    
+
     
 }
 
